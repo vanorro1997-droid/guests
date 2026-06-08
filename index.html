@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Наши гости — главные герои этого дня</title>
+  <meta name="viewport"content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family:'Segoe UI', Arial, sans-serif;
+      background: #faf8f5;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #4a4a4a;
+    }
+    p.lead {
+      font-size: 1.2em;
+      color: #666;
+      margin-top: 10px;
+    }
+    .guests-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+    .guest-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      padding: 20px;
+      overflow: hidden;
+      transition: transform .2s;
+    }
+    .guest-card:hover {
+      transform: translateY(-5px);
+    }
+    .guest-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .guest-card h3 {
+      font-size: 1.3em;
+      margin-bottom: 5px;
+      color: #2a2a2a;
+    }
+    .guest-card .relation,
+    .guest-card .age {
+      font-size: 0.95em;
+      color: #777;
+      margin-bottom: 8px;
+    }
+    .guest-card .description {
+      font-size: 0.97em;
+      line-height: 1.5;
+      color: #444;
+    }
+    @media (max-width: 600px) {
+        h1 { font-size: 2em; }
+        p.lead { font-size: 1em; }
+        .guest-card h3 { font-size: 1.1em; }
+        .guest-card img { height: 140px; object-fit: cover; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Наши гости — главные герои этого дня</h1>
+  <p class="lead">Каждый из них — часть вашей истории. Знакомьтесь с теми, кто сегодня задает настроение!</p>
+</header>
+
+<div class="guests-grid">
+
+<!-- Гости -->
+<div class="guest-card">
+  <img src="https://via.placeholder.com/300x200?text=Фото+Рыбкин+Вадим"alt="Рыбкин Вадим">
+  <h3>Рыбкин Вадим</h3>
+  <div class="relation">Отец невесты</div>
+  <div class="age">55 лет</div>
+  <div class="description">увлекается рыбалкой и является лучший спецом в сфере строительства</div>
+</div>
+
+<div class="guest-card">
+  <img src="https://via.placeholder.com/300x200?text=Фото+Рыбкина+Римма"alt="Рыбкина Римма">
+  <h3>Рыбкина Римма</h3>
+  <div class="relation">Мать невесты</div>
+  <div class="age">55 лет</div>
+</div>
+
+<div class="guest-card">
+  <img src="https://via.placeholder.com/300x200?text=Фото+Рыбкин+Владислав"alt="Рыбкин Владислав">
+  <h3>Рыбкин Владислав</h3>
+  <div class="relation">Старший брат невесты</div>
+  <div class="age">30 лет</div>
+</div>
+
+<div class="guest-card">
+  <img src="https://via.placeholder.com/300x200?text=Фото+Рыбкин+Даниил"alt="Рыбкин Даниил">
+  <h3>Рыбкин Даниил</h3>
+  <div class="relation">Средний брат невесты</div>
+  <div class="age">25 лет</div>
+</div>
+
+<div class="guest-card">
+  <img src="https://via.placeholder.com/300x200?text=Фото+Рыбкин+Дарий"alt="Рыбкин Дарий">
+  <h3>Рыбкин Дарий</h3>
+  <div class="relation">Младший брат невесты</div>
+  <div class="age">18 лет</div>
+</div>
+
+<div class="guest-card">
+  <img src="https://via.placeholder.com/300x200?text=Фото+Валенитна"alt="Валенитна">
+  <h3>Валенитна</h3>
+  <div class="relation">Бабушка невесты</div>
+  <div class="age">74 года</div>
+</div>
+
+<div class="guest-card">
+  <img src="https://via.placeholder.com/300x200?text=Фото+Титоренко+Елена"alt="Титоренко Елена">
+  <h3>Титоренко Елена</h3>
+  <div class="relation">Сестра жениха</div>
+  <div class="age">25 лет</div>
+  <div class="description">будущий врач, учится в медицинском вузе, любит помогать людям</div>
+</div>
+
+<div class="guest-card">
+  <img src="https://via.placeholder.com/300x200?text=Фото+Касаткин+Михаил"alt="Касаткин Михаил">
+  <h3>Касаткин Михаил</h3>
+  <div class="relation">Парень сестры жениха</div>
+  <div class="age">27 лет</div>
+  <div class="description">практикующий врач терапевт,увлекается геологией</div>
+</div>
+
+<div class="guest-card">
+ <img alt="Долженкова Лариса"id="019ea742-ac86-7307-a351-9fb546867c7e">
+  <h3>Долженкова Лариса</h3>
+  <div class="relation">Тётя жениха</div>
+  <div class="age">75 лет</div>
+  <div class="description">железнодорожник со стажем. Сильный технический специалист, также очень вкусно готовит.</div>
+</div>
+
+<div class="guest-card">
+  <img src="https://via.placeholder.com/300x200?text=Фото+Долженкова+Екатерина"alt="Долженкова Екатерина">
+  <h3>Долженкова Екатерина</h3>
+  <div class="relation">Троюродная сестра жениха</div>
+  <div class="age">35 лет</div>
+  <div class="description">также является классным техническим спеалистом , является инженером сметчиком</div>
+</div>
+
+<div class="guest-card">
+  <img src="https://via.placeholder.com/300x200?text=Фото+Павел"alt="Павел">
+  <h3>Павел</h3>
+  <div class="relation">Муж Екатерины</div>
+  <div class="age">42 года</div>
+  <div class="description">тоже технический специалист, очень любит путешествовать в разные экзотические места и берёт везде Катю с Артёмом.</div>
+</div>
+
+<div class="guest-card">
+   <img src="https://via.placeholder.com/300x200?text=Фото+Федулов+Артём"alt="Федулов Артём">
+   <h3>Федулов Артём</h3>
+   <div class="relation">Троюродный племенник жениха</div>
+   <div class="age">13 лет</div>
+   <div class="description">учится в школе, активно изучает робототехнику и программирование, а также занимается спортом.</div>
+ </div>
+
+<div class="guest-card">
+   <img src="https://via.placeholder.com/300x200?text=Фото+Лёзина+Наталья"alt="Лёзина Наталья">
+   <h3>Лёзина Наталья</h3>
+   <div class="relation">Тётя жениха</div>
+   <div class="age">75 лет</div>
+   <div class="description">архитектор со стажем, сама спроектировала дизайн макет для своей квартиры, оченьлюбит животных, постоянно помогает кошечкам и собачкам.</div>
+ </div>
+
+<div class="guest-card">
+   <img src="https://via.placeholder.com/300x200?text=Фото+Иванова+Ангелина"alt="Иванова Ангелина">
+   <h3>Иванова Ангелина</h3>
+   <div class="relation">Троюродная сестра жениха по отцу</div>
+   <div class="age">28 лет</div>
+   <div class="description">специалист в области проектирования систем водоотведения и кондиционирования воздуха, очень любит путешествовать, мечтать, а также своего французского будльдога изюма.</div>
+ </div>
+
+<div class="guest-card">
+   <img src="https://via.placeholder.com/300x200?text=Фото+Катя"alt="Катя (подруга невесты)">
+   <h3>Катя (подруга невесты)</h3>
+   <div class="relation">Подруга невесты со школы</div>
+   <div class="age">23 года</div>
+ </div>
+
+<div class="guest-card">
+   <img alt="Лиза Елецкая"id="019ea742-faac-75c1-93c8-89ba3e2035c6">
+   <h3>Лиза Елецкая (подруга невесты)</h3>
+   <div class="relation">Подруга невесты со школы</div>
+   <div class="age">22 года</div>
+ </div>
+
+<div class="guest-card">
+   <img src="https://via.placeholder.com/300x200?text=Фото+Лиза+Панина"alt="Лиза Панина (подруга невесты)">
+   <h3>Лиза Панина (подруга невесты)</h3>
+   <div class="relation">Подруга невесты со школы</div>
+   <div class="age">23 года</div>
+ </div>
+
+<div class="guest-card">
+   <img src="https://via.placeholder.com/300x200?text=Фото+Анжелика"alt="Анжелика (подруга невесты)">
+   <h3>Анжелика (подруга невесты)</h3>
+   <div class="relation">Подруга невесты со школы</div>
+   <div class ="age">23 года</div>
+ </div>
+
+<div class="guest - card">
+     <img src ="https : //via . placeholder . com /300x200 ? text = Фото + Гузель"alt ="Гузель (подруга невесты)">
+     <h3> Гузель (подруга невесты) </h3>
+     <div class="relation"> Подруга невесты со школы </div>
+     <div class="age">22 года </div>
+ </div>
+
+<div class="guest - card">
+     <img src ="https : //via . placeholder . com /300x200 ? text = Фото + Наташа"alt ="Наташа (подруга жениха)">
+     <h3> Наташа (подруга жениха) </h3>
+     <div class="relation"> Подруга жениха со школы </div>
+     <div class="age">28 лет </div>
+     <div class="description"> Наташа перепробовала разные сферы и во всех сферах у неё получалось довольно успешно справляться с обязанностями, поэтому её можно назвать мультизадачной. Следит за модой, любит красиво одеваться. </div>
+ </div>
+
+<div class="guest - card">
+     <img src ="https : //via . placeholder . com /300x200 ? text = Фото + Женя + Платонов"alt ="Женя Платонов (друг жениха)">
+     <h3> Женя Платонов (друг жениха) </h3>
+     <div class="relation"> Друг жениха со школы </div>
+     <div class="age">28 лет </div>
+     <div class="description"> Педагог по образованию, заводчанин по призванию. С Женей точно не соскучишься, он является центром внимания во всех шумных компаниях, </div>
+ </div>
+
+<div class="guest - card">
+     <img src ="https : //via . placeholder . com /300x200 ? text = Фото + Женя + Галабурда"alt ="Женя Галабурда (друг жениха)">
+     <h3> Женя Галабурда (друг жениха) </h3>
+     <div class="relation"> Друг жениха со школы </div>
+     <div class="age">27 лет </div>
+     <div class="description"> Врач терапевт, очень любит, когда пациенты приносят коробку родных просторов и бабаевский. Любит гамать иногда в доту , а также любит своего кота. </div>
+ </div>
+
+<div class="guest - card">
+     <img src ="https : //via . placeholder . com /300x200 ? text = Фото + Никита (друг жениха)"alt ="Никита (друг жениха)">
+     <h3> Никита (друг жениха) </h3>
+     <div class="relation"> Друг жениха со школы </div>
+     <div class="age">28 лет </div>
+     <div class="description"> Обладатель диплома МГУ. Добовольно серьёзный и представительный молодой человек, умеет виртуозно играть на музыкальных инструментах, например, на пианино, гитаре и тп. </div>
+ </div>
+
+<div class="guest - card">
+     <img src ="https : //via . placeholder . com /300x200 ? text = Фото + Женя + Цепков (друг жениха)"alt ="Женя Цепков (друг жениха)"/>
+       <h3> Женя Цепков (друг жениха) </h3>
+       <div class="relation"> Друг жениха с университета </div>
+       <div class="age">29 лет </div>
+       <div class="description"> Топовый сотрудник Сбера. Обладает обширным техническим бекграундом по многим современным технологиям и активно следит за равзвитием новых технологий, ЧТО И ПОЗВОЛИЛО ЕМУ ПОЛУЧИТЬ ДОЛЖНОСТЬ ФУЛЛТЕК РАЗРАБОТЧИКА. Очень весёлый, задорный и жизнерадостный человек. </div>
+   </div>
+
+<div class="guest - card">
+       <img src ='https : //via . placeholder . com /300x200 ? text = Фото + Дарья (жена Жени)'alt ='Дарья (жена Жени)'/>
+       <h3> Дарья (жена Жени) </h3>
+       <div class='relation'> Жена Жени Цепкова </div>
+       <div class='age'>28 лет </div>
+       <div class='description'> Правое плечо Евгения, помогает ему во многих бытовых вопросах, имеет изысканное чувство стиля, что позволяет ей красиво выглядеть держать в красоте мужа и дом. </div>
+   </div>
+
+<div class='guest - card'>
+       <img src ='https : //via . placeholder . com /300x200 ? text = Фото + Паша'alt ='Паша (друг жениха)'/>
+       <h3> Паша (друг жениха) </h3>
+       <div class='relation'> Друг жениха со школы </div>
+       <div class='age'>23 года </div>
+       <div class='description'> Человек, который кайфует по жизни, любит отрываться на светских мероприятиях. По профессии веб разработчик. </div>
+   </div>
+
+<div class='guest - card'>
+       <img src ='https : //via . placeholder . com /300x200 ? text = Фото + Катя (девушка Димы)'alt ='Катя (девушка Димы)'/>
+       <h3> Катя (девушка Димы) </h3>
+       <div class='relation'> Девушка Димы </div>
+       <div class='age'>30 лет </div>
+   </div>
+
+<div class='guest - card'>
+       <img src ='https : //via . placeholder . com /300x200 ? text = Фото + Дима'alt ='Дима (друг жениха)'/>
+       <h3> Дима (друг жениха) </h3>
+       <div class='relation'> Друг жениха со школы </div>
+       <div class='age'>28 лет </div>
+       <div class ="description"> обладает широкими иниженерными знаниями в области авиастроения, увлекается авиацией в целом, очень дружелюбный, всегда придёт на помощь </div>
+   </div>
+
+<div class ="guest - card">
+        <img src ="https : //via . placeholder . com"alt ="Марта (знакомая)"/>
+        <h3> Марта (знакомая) </h3>
+        <div class="relation"> Знакомая жениха и невесты </div>
+        <div class="age">25 лет </div>
+        <div class="description"> является лучшей подругой сестры жениха, будущий врач, увлекается фото и видео съемкой, посему и является фотографом на нашеё свадьбе. Всегда за любой движ. </div>
+    </div>
+
+<!-- Конец списка гостей -->
+
+<!-- Футер -->
+<div style='text-align:center; margin-top:45px; font-size:14px; color:#777;'>
+Создано для ведущего свадьбы | Если нужно добавить QR-код или контакты — сообщите!
+</div>
+</body>
+</html>
